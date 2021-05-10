@@ -1,0 +1,127 @@
+@import "compass/css3";
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clr{clear:both;}
+body {background-color:#ddd;}
+
+#mainNav {
+  background-color:#1c1427;
+  font-size:0;
+  text-align:center;
+  width:100%;
+}
+
+#mainNav ul {font-size:12px; }
+#mainNav i {font-size:3em;}
+#mainNav li {display:inline-block; height:inherit;}
+
+#mainNav a {
+  color:#fff;
+  font-family: Century Gothic;
+  font-size: 1.5em;
+  display:block;
+  height:inherit;
+  margin:0;
+  padding:1.75em 1em;
+  text-decoration:none;
+}
+
+#mainNav a:hover {
+  background-color:#40394a; transition: background .25s ease;
+ 
+}
+
+#mainNav li .sub-menu {
+  background-color:#40394a;
+  position:absolute;
+  left:-9999px;
+  opacity:0;
+  transition: opacity .75s;
+  width:100%;
+  z-index:10;
+}
+
+#mainNav li:hover .sub-menu {
+  left:0px;
+  opacity:1;
+}
+
+#mainNav .sub-menu i {font-size:1em;}
+
+#mainNav .sub-menu a {
+  height:3em; line-height:3em;
+  padding:0 2em;
+  height:inherit;
+  width:100%;
+}
+
+#mainNav .sub-menu a:hover {background-color:#1c1427;}
+
+*,
+*::before{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.home{
+    /* width: 100vw; */
+    max-height: 100vh;
+    background: url(star.jpg) center/cover no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+.home::before{
+    content:"";
+    width: 100%;
+    /* height: 100%; */
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.home_video{
+    padding-bottom: 56.25%;
+}
+.home video {
+  /* position: absolute; */
+  width: 500px;
+  height: 50%;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  /* text-align: center; */
+}
+.conter{
+  margin: 0 auto;
+  background-color: #40394a;
+}
+.home_content{
+    width: 100%;
+    height:100%;
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    color: white;
+    z-index: 3;
+    font-family: sans-serif;
+}
+.home_content h1{
+    font-size: 5vw;
+    margin: 0 0 15px;
+    text-transform: capitalize;
+    font-weight: 400;
+    text-align: center;
+}
+.home_content p {
+    text-align: center;
+    font-size: 2vw;
+}
+.home_video{
+  display: flex;
+  flex-direction: column;
+  color: wheat;
+}
